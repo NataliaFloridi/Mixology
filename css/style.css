@@ -26,6 +26,7 @@ body {
     background-position: center;
     background-size: cover;
 }
+
 .header-logo a, p {
     font-size: 1.125em;
 }
@@ -105,7 +106,6 @@ button {
     color: #2F3035;
     font-size: 1.5em;
     font-weight: bold;
-    
 }
 
 .main-footer p {
