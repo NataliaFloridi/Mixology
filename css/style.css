@@ -1,18 +1,17 @@
 /* Reset */
 
-body, h1, h2, p, a {
+body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
-    color: #222222;
 }
 
 img {
     display: block;
     max-width: 100%;
+}
+body {
+    font-family:'Source Sans Pro', sans-serif;
+    color:#222222;
 }
 
 *{
@@ -20,3 +19,117 @@ img {
 }
 
 /* Header */
+
+.header-bg {
+    height: 563px;
+    background: url('../img/Image.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header-logo a, p {
+    font-size: 1.125em;
+}
+
+.header-info h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+.header-info p {
+    opacity: 75%;
+    font-size: 1.5em; 
+    text-align: center;
+}
+
+button {
+    color: #ffffff;
+    background: #F33D01;
+    height: 48px;
+    width: 209px;
+    border-radius: 50px;
+    border: none;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* QUOTE */
+
+.quote-content img {
+    height: 64px;
+    width: 64px;
+}
+.quote-content q {
+    font-family: 'Playfair Display', serif;
+    color: #2F3035;
+    font-size: 2em;
+}
+
+.quote-content:last-of-type p {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: #86899B;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* MAIN */
+
+.main-header h3{
+    font-family: 'Playfair Display', serif;
+    color: #86899B;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #2F3035;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.main-header p {
+    color: #2F3035;
+    font-size: 1.25em;
+    opacity: 60%;
+}
+
+.main-footer h2{
+    font-family: 'Playfair Display', serif;
+    color: #2F3035;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+.main-footer p {
+    color: #2F3035;
+    font-size: 1.25em;
+    opacity: 60%;
+}
+
+/* INFOS */
+
+.info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 1.25em;
+    opacity: 75%; 
+}
+
+/* FOOTER */
+
+footer a, p {
+    color: #86899B;
+    font-size: 1.125em;
+}
