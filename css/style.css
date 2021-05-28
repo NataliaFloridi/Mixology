@@ -1,6 +1,6 @@
 /* Reset */
 
-body, h1, h2, h3, p, a {
+body, h1, h2, h3, h4, p, a {
     margin: 0;
     padding: 0;
 }
@@ -79,7 +79,12 @@ button {
     line-height: 1.25rem;
     font-weight: bold;
     text-align: center;
-    margin: 48px auto 0 ;
+    margin: 48px auto 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff9a78;
 }
 
 @media (max-width: 500px) {
@@ -96,6 +101,7 @@ button {
         margin-top: 30px;
     }
 }
+
 /* QUOTE */
 
 .quote {
@@ -139,6 +145,7 @@ button {
 @media (max-width: 500px){
     .quote {
         margin-top: 10px;
+        margin-bottom: 35px;
     }
 }
 
@@ -170,23 +177,44 @@ button {
     line-height: 2.25rem;
     font-weight: bold;
     color: #2F3035;  
-    margin-bottom: 32px ;
-}
-.main-header p {
-    max-width: 436px;
-    color: #2F3035;
-    font-size: 1.25em;
-    line-height: 1.5rem;
-    opacity: 60%;
+    margin-bottom: 32px;
+    margin-top: 40px;
 }
 
-.main-content {
-    color: #2F3035;
+h4 {
+    max-width: 436px;
     font-size: 1.25em;
     line-height: 1.5rem;
+    color: #2F3035;
     opacity: 60%;
     text-align: left;
+    padding-left: 0;
+    font-weight: normal;
     margin-bottom: 64px;
+}
+
+.main-header p {
+    max-width: 436px;
+    font-size: 1.25em;
+    line-height: 1.5rem;
+    color: #2F3035;
+    opacity: 60%;
+    text-align: left;
+    padding-left: 72px;
+}
+ 
+.main-header p:first-of-type {
+    margin-bottom: 40px;
+}
+
+.main-header h2:first-of-type:before{
+    content: url('../img/Icon\ -\ Mail.svg');
+    margin-right: 32px;
+}
+
+.main-header h2:last-of-type:before{
+    content: url('../img/Icon\ -\ Anchor.svg');
+    margin-right: 32px;
 }
 
 .main-header h2{
@@ -196,21 +224,30 @@ button {
     font-size: 1.5em;
     font-weight: bold;
     display: flex;
-    justify-content: flex-start;
-}
-
-.main-header h2 p {
-    color: #F33D01;
-}
-
-.main-header h2 img {
-    height: 40px;
-    width: 40px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .main-img {
     width: 480px;
-    height: 600px; 
+    max-height: 600px; 
+}
+
+@media (max-width: 500px){
+    .main-header h2 {
+        font-size: 1.24em;
+    }
+}
+
+@media (min-width: 501px) and (max-width:924px) {
+    .main {
+        max-width: 768px;
+        justify-content: center ;
+    }
+
+    .main-header, .main-img {
+        max-width: 380px;
+    }
 }
 
 /* INFOS */
@@ -223,37 +260,81 @@ button {
     justify-content: space-between;
 }
 
-.info-1 {
-    width: 436px;
+.info-1, .info-2 {
+    max-width: 436px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
 }
 
-.info-1 h2 {
+.info-1 h2:first-of-type:before {
+    content: url('../img/Icon\ -\ Award.svg');
+    margin-right: 32px;
+}
+
+.info-1 h2:last-of-type:before {
+    content: url('../img/Icon\ -\ Chart.svg');
+    margin-right: 32px;
+}
+
+.info-2 h2:first-of-type:before {
+    content: url('../img/Icon\ -\ Command.svg');
+    margin-right: 32px;
+}
+
+.info-2 h2:last-of-type:before {
+    content: url('../img/Icon\ -\ Copy.svg');
+    margin-right: 32px;
+}
+
+.info-1 h2, .info-2 h2 {
+    max-width: 436px;
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     line-height: 1.75rem;
     font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.info-1 h2 img {
-    height: 40px;
-    width: 40px;
-}
-
-.info-1 p {
+.info-1 p, .info-2 p {
     font-size: 1.25em;
     line-height: 1.5rem;
     opacity: 75%; 
     margin-bottom: 80px;
+    padding-left: 72px;
+    text-align: left;
+}
+
+@media (max-width: 500px){
+    .info-1 h2, .info-2 h2  {
+        font-size: 1.24em;
+    }
+    .info {
+        margin-top: 50px;
+    }
+    .info-1 p, .info-2 p {
+        margin-bottom: 20px;
+    }
+} 
+
+@media (min-width: 501px) and (max-width:924px) {
+    .info{
+        max-width: 768px;
+        justify-content: center ;
+    }
 }
 
 /* FOOTER */
-.footer{
+
+footer{
     display: flex;
     align-content: center;
     margin-bottom: 67px;  
 }
 
-.footer a, p {
+footer a, p {
     display: inline-block;
     margin: 0 auto ;
     color: #86899B;
