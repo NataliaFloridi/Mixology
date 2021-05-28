@@ -118,6 +118,7 @@ button {
 .main-header, .main-footer, .main-img {
     max-width: 436px;
 }
+
 .main-header h3{
     font-family: 'Playfair Display', serif;
     color: #86899B;
@@ -139,17 +140,16 @@ button {
     opacity: 60%;
 }
 
-.main-footer h2{
+.main-header h2{
     font-family: 'Playfair Display', serif;
     color: #2F3035;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.main-footer p {
-    color: #2F3035;
-    font-size: 1.25em;
-    opacity: 60%;
+.main-header h2 img {
+    height: 40px;
+    width: 40px;
 }
 
 /* INFOS */
@@ -165,6 +165,11 @@ button {
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.info h2 img {
+    height: 40px;
+    width: 40px;
 }
 
 .info p {
