@@ -27,9 +27,23 @@ body {
     background-size: cover;
 }
 
+.header-logo {
+    max-width: 975px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .header-logo a, p {
     font-size: 1.125em;
 }
+
+.header-info {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
 
 .header-info h1 {
     font-family: 'Playfair Display', serif;
@@ -60,14 +74,26 @@ button {
 
 /* QUOTE */
 
+.quote {
+    max-width: 560px;
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .quote-content img {
     height: 64px;
     width: 64px;
+    margin: 0 auto;
 }
+
 .quote-content q {
     font-family: 'Playfair Display', serif;
     color: #2F3035;
     font-size: 2em;
+    text-align: center;
 }
 
 .quote-content:last-of-type p {
@@ -76,10 +102,22 @@ button {
     color: #86899B;
     font-size: 1em;
     font-weight: bold;
+    text-align: center;
 }
 
 /* MAIN */
 
+.main {
+    max-width: 975px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
+
+.main-header, .main-footer, .main-img {
+    max-width: 436px;
+}
 .main-header h3{
     font-family: 'Playfair Display', serif;
     color: #86899B;
@@ -116,6 +154,13 @@ button {
 
 /* INFOS */
 
+.info {
+    max-width: 364px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .info h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
@@ -128,8 +173,15 @@ button {
 }
 
 /* FOOTER */
+.footer{
+    display: flex;
+    align-content: center;  
+}
 
-footer a, p {
+.footer a, p {
+    display: inline-block;
+    margin: 0 auto;
     color: #86899B;
     font-size: 1.125em;
+    text-align: center;
 }
