@@ -1,0 +1,39 @@
+.quote {
+    max-width: 560px;
+    margin: 100px auto;
+    @include display;
+}
+
+.quote-content{
+    img {
+        height: 64px;
+        width: 64px;
+        margin: 0 auto 32px;
+    }
+    q{
+        display: block;
+        text-align: center;
+        margin: 32px auto 0;
+        margin-top: 32px;
+        color: $primary-color;
+        @include type-2(32);
+    }
+    p{
+        display: block;
+        color: $secondary-color;
+        letter-spacing: 0.02em;
+        margin: 24px auto 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        @include type-2(16);
+    }   
+
+}
+
+.quote {
+    @include d(s) {
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+}

@@ -1,0 +1,93 @@
+
+.main {
+    max-width: 975px;
+    margin: 0 auto;
+    @include display;
+}
+
+.main-header {
+    h3 {
+        color: $secondary-color;
+        letter-spacing: 0.02rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 32px ;
+        @include type-2(16);
+    }
+
+    h1 {
+        max-width: 436px;
+        color: $primary-color;  
+        font-weight: bold;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        @include type-2(32);
+    }
+    h4 {
+        max-width: 436px;
+        color: $primary-color;
+        opacity: 60%;
+        text-align: left;
+        padding-left: 0;
+        font-weight: normal;
+        margin-bottom: 64px;
+        @include type-1(2024);
+    }
+    h2{
+        max-width: 436px;
+        color: $primary-color;
+        font-weight: bold;
+        @include type-2(24);
+        @include display;
+        text-align: center;
+    }
+    p {
+        max-width: 436px;
+        color: $primary-color;
+        opacity: 60%;
+        text-align: left;
+        padding-left: 72px;
+        @include type-1(2024);
+            &:first-of-type {
+                margin-bottom: 40px;
+            }
+    }
+} 
+
+.main-img {
+    width: 480px;
+    max-height: 600px; 
+}
+ 
+
+.main-header h2:first-of-type:before{
+
+}
+
+.main-header h2:last-of-type:before{
+    content: url('../img/Icon\ -\ Anchor.svg');
+    margin-right: 32px;
+}
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    .main-header h2 {
+        font-size: 1.24em;
+    }
+}
+
+@media (min-width: 501px) and (max-width:924px) {
+    .main {
+        max-width: 768px;
+        justify-content: center ;
+    }
+
+    .main-header, .main-img {
+        max-width: 380px;
+    }
+}

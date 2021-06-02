@@ -1,0 +1,116 @@
+$main-color: #222222;
+$primary-color:#2F3035;
+$secondary-color: #86899B;
+$color1-button: #ffffff;
+$color2-button: #F33D01;
+$color-hover:#ff9a78;
+$font-1:'Source Sans Pro', sans-serif;
+$font-2:'Playfair Display', serif;
+
+
+@function em($pixel, $contexto: 16) {
+    @return $pixel / $contexto + em;
+}
+
+@mixin type-1($size) {
+    font-family: $font-1;
+    @if $size == 16 {
+        font-size: em(16);
+        line-height: em(16, 16);
+    }
+    @else if $size == 18 {
+        font-size: em(18);
+        line-height: em(20, 18);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(24, 24);
+    }
+    @else if $size == 20 {
+        font-size: em(20);
+        line-height: em(20, 20);
+    }
+    @else if $size == 2024 {
+        font-size: em(20);
+        line-height: em(24, 20);
+    }
+
+}
+
+@mixin type-2($size) {
+    font-family: $font-2;
+    @if $size == 48 {
+        font-size: em(48);
+        line-height: em(48, 48);
+    }
+    @else if $size == 16 {
+        font-size: em(16);
+        line-height: em(16, 16);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(28, 24);
+    }
+    @else if $size == 32 {
+        font-size: em(32);
+        line-height: em(36, 32);
+    }
+}
+
+$l-device: 960px;
+$m-device: 760px;
+$s-device: 480px;
+
+@mixin d($size) {
+    @if $size == l {
+        @media screen and (min-width: #{$l-device}) {
+            @content;
+        }
+    }
+    @else if $size == m {
+        @media screen and (min-width: #{$m-device}) and (max-width: $l-device - 1) {
+            @content;
+        }
+    }    
+    @else if $size == s {
+        @media screen and (max-width: $m-device - 1) {
+            @content;
+        }
+    }    
+}
+
+@mixin display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// @mixin icone ($icone) {
+//     margin-right: 32px;
+//     @if $icone == 1{
+//         content: url('../img/Icon\ -\ Mail.svg');
+//     }
+//     @else if $icone == 2{
+//         content: url('../img/Icon\ -\ Anchor.svg');
+//     }
+//     @else if $icone == 3{
+//         content: url('../img/Icon\ -\ Award.svg');
+//     }
+//     @else if $icone == 4{
+//         content: url('../img/Icon\ -\ Chart.svg');
+//     }
+//     @else if $icone == 5{
+//         content: url('../img/Icon\ -\ Command.svg');
+//     }
+//     @else if $icone == 6{
+//         content: url('../img/Icon\ -\ Copy.svg');
+//     }
+// }
+
+$lista: Mail Anchor Award Chart Command Copia;
+
+@each $icone in $lista {
+	.icone-#{$icone} {
+		content: url('img/#{$icone}.svg');
+	}
+}
