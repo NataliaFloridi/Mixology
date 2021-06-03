@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    align-content: center;
+    margin-bottom: 67px; 
+    a, p{
+        color: $secondary-color;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        @include type-1(18);
+    }
+}

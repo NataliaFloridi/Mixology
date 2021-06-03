@@ -34,7 +34,6 @@ $font-2:'Playfair Display', serif;
         font-size: em(20);
         line-height: em(24, 20);
     }
-
 }
 
 @mixin type-2($size) {
@@ -83,34 +82,4 @@ $s-device: 480px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-// @mixin icone ($icone) {
-//     margin-right: 32px;
-//     @if $icone == 1{
-//         content: url('../img/Icon\ -\ Mail.svg');
-//     }
-//     @else if $icone == 2{
-//         content: url('../img/Icon\ -\ Anchor.svg');
-//     }
-//     @else if $icone == 3{
-//         content: url('../img/Icon\ -\ Award.svg');
-//     }
-//     @else if $icone == 4{
-//         content: url('../img/Icon\ -\ Chart.svg');
-//     }
-//     @else if $icone == 5{
-//         content: url('../img/Icon\ -\ Command.svg');
-//     }
-//     @else if $icone == 6{
-//         content: url('../img/Icon\ -\ Copy.svg');
-//     }
-// }
-
-$lista: Mail Anchor Award Chart Command Copia;
-
-@each $icone in $lista {
-	.icone-#{$icone} {
-		content: url('img/#{$icone}.svg');
-	}
 }
