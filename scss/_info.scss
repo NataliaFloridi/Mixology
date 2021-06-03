@@ -9,14 +9,14 @@
     @include display;
     h2 {
         font-weight: bold;
-        color: $primary-color;
+        color: $main-color;
         @include type-2(24);
         @include display;
         align-items: center; 
     }
     p {
         opacity: 75%;
-        color: $primary-color; 
+        color: $main-color; 
         margin-bottom: 80px;
         padding-left: 72px;
         text-align: left;

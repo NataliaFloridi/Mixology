@@ -12,10 +12,10 @@
     }
     q{
         display: block;
+        color: $primary-color;
         text-align: center;
         margin: 32px auto 0;
         margin-top: 32px;
-        color: $primary-color;
         @include type-2(32);
     }
     p{
@@ -28,7 +28,6 @@
         font-weight: bold;
         @include type-2(16);
     }   
-
 }
 
 .quote {

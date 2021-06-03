@@ -22,10 +22,10 @@
     max-width: 560px;
     margin: 0 auto;
     h1{
-        font-weight: bold;
         text-align: center;
         margin-top: 101.91px;
         color: $main-color;
+        font-weight: bold;
         @include type-2(48)
     }
     p{
