@@ -9,7 +9,7 @@ Make it Responsible on mobile and tablet
 
 ### Screenshot
 
-![Screenshot Mixology](https://github.com/NataliaFloridi/ProfileCard/blob/main/images/Screenshot.jpg)
+![Screenshot Mixology](https://github.com/NataliaFloridi/Mixology/blob/main/img/Screenshot.jpg)
 
 ### Links
 
